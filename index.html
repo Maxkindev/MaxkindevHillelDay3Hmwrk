@@ -1,12 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Mondrian practice</title>
     </head>
     <body>
-        <table>
-            
+        <!-- The Modrian Painting by Maxkindev -->
+        <!-- Browser автоматически генерирует высоту и ширину каждой ячейки (в зависимости от содержимого ячейки),
+            но чтобы получить приблезительный размер "цветной ячейки" для совпадения с картиной,
+            необходимо явно указать height(высоту) ячейки, которая "объединена" с другими _по "вертикали"_ через  rowspan_N * 22px ,
+            необходимо явно указать width(ширину) ячейки, которая "объединена" с другими _по "горизонтали"_ через colspan_N * 19px .
+            1px ~ 0.27mm
+            (приблизительные размеры минимальной ячейки взяты с картинки)
+            1 column minimum height ~6mm, so height ~ 6 / 0.27 == 22px
+            1 column minimum width  ~5mm, so width  ~ 5 / 0.27 == 19px
+                   border thickness ~2mm, so border ~ 2 / 0.27 == 7px
+            width  700px ~ 189mm
+            height 500px ~ 135mm
+        -->
+        <!-- <table border="1" frame="void" rules="all" bgcolor="white" cellpadding="0" cellspacing="1"> -->
+        <table border="1" bgcolor="black" cellpadding="0" cellspacing="7">
+            <!-- row_1 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- задаю высоту крайней левой ячейке, чтобы браузер имел ориентиры -->
+                <!-- 1.0.1 -->
+                <td rowspan="3" bgcolor="gainsboro" width="19" height="66"></td> <!-- delete column 2.0.1 and 3.0.1 on next rows_2-3 -->
+
+                <!-- 1.0.2 -->
+                <td colspan="11" bgcolor="gainsboro" width="209" height="22"></td> <!-- delete next 10 columns-->
+                <!-- <td>1.0.3</td> -->
+                <!-- <td>1.0.4</td> -->
+                <!-- <td>1.0.5</td> -->
+                <!-- <td>1.0.6</td> -->
+                <!-- <td>1.0.7</td> -->
+                <!-- <td>1.0.8</td> -->
+                <!-- <td>1.0.9</td> -->
+                <!-- <td>1.1.0</td> -->
+                <!-- <td>1.1.1</td> -->
+                <!-- <td>1.1.2</td> -->
+
+                <!-- 1.1.3 -->
+                <td colspan="13" bgcolor="gainsboro" width="247" height="22"></td> <!-- delete next 12 columns -->
+                <!-- <td>1.1.4</td> -->
+                <!-- <td>1.1.5</td> -->
+                <!-- <td>1.1.6</td> -->
+                <!-- <td>1.1.7</td> -->
+                <!-- <td>1.1.8</td> -->
+                <!-- <td>1.1.9</td> -->
+                <!-- <td>1.2.0</td> -->
+                <!-- <td>1.2.1</td> -->
+                <!-- <td>1.2.2</td> -->
+                <!-- <td>1.2.3</td> -->
+                <!-- <td>1.2.4</td> -->
+                <!-- <td>1.2.5</td> -->
+
+                <!-- 1.2.6 -->
+                <td colspan="2" rowspan="8" bgcolor="gainsboro" width="38" height="176"></td> <!-- delete next column ++++ columns (2-8).2.(6-7) on next rows_2-8 -->
+                <!-- <td>1.2.7</td> -->
+
+                <!-- 1.2.8 -->
+                <td colspan="2" rowspan="8" bgcolor="#ffc61a" width="38" height="176"></td> <!-- delete next column ++++ columns (2-8).2.(8-9) on next rows_2-8 -->
+                <!-- <td>1.2.9</td> -->
+            </tr>
+
+            <!-- row_2 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>2.0.1</td> -->
+
+                <!-- 2.0.2 -->
+                <td colspan="11" rowspan="2" bgcolor="midnightblue" width="209" height="44"></td> <!-- delete next 10 columns ++++ 11 columns "under" on the next row_3 -->
+                <!-- <td>2.0.3</td> -->
+                <!-- <td>2.0.4</td> -->
+                <!-- <td>2.0.5</td> -->
+                <!-- <td>2.0.6</td> -->
+                <!-- <td>2.0.7</td> -->
+                <!-- <td>2.0.8</td> -->
+                <!-- <td>2.0.9</td> -->
+                <!-- <td>2.1.0</td> -->
+                <!-- <td>2.1.1</td> -->
+                <!-- <td>2.1.2</td> -->
+
+                <!-- 2.1.3 -->
+                <td colspan="5" rowspan="2" bgcolor="gainsboro" width="95" height="44"></td> <!-- delete next 4 columns ++++ 5 columns "under" on next row_3 -->
+                <!-- <td>2.1.4</td>
+                <td>2.1.5</td>
+                <td>2.1.6</td>
+                <td>2.1.7</td> -->
+
+                <!-- 2.1.8 -->
+                <td colspan="8" rowspan="2" bgcolor="midnightblue" width="152" height="44"></td> <!-- delete next 7 columns ++++ 8 columns "under" on next row_3 -->
+                <!-- <td>2.1.9</td>
+                <td>2.2.0</td>
+                <td>2.2.1</td>
+                <td>2.2.2</td>
+                <td>2.2.3</td>
+                <td>2.2.4</td>
+                <td>2.2.5</td> -->
+                <!-- <td>2.2.6</td> -->
+                <!-- <td>2.2.7</td> -->
+                <!-- <td>2.2.8</td> -->
+                <!-- <td>2.2.9</td> -->
+            </tr>
+
+            <!-- row_3 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>3.0.1</td> -->
+                <!-- <td>3.0.2</td>
+                <td>3.0.3</td>
+                <td>3.0.4</td>
+                <td>3.0.5</td>
+                <td>3.0.6</td>
+                <td>3.0.7</td>
+                <td>3.0.8</td>
+                <td>3.0.9</td>
+                <td>3.1.0</td>
+                <td>3.1.1</td>
+                <td>3.1.2</td> -->
+                <!-- <td>3.1.3</td>
+                <td>3.1.4</td>
+                <td>3.1.5</td>
+                <td>3.1.6</td>
+                <td>3.1.7</td> -->
+                <!-- <td>3.1.8</td>
+                <td>3.1.9</td>
+                <td>3.2.0</td>
+                <td>3.2.1</td>
+                <td>3.2.2</td>
+                <td>3.2.3</td>
+                <td>3.2.4</td>
+                <td>3.2.5</td> -->
+                <!-- <td>3.2.6</td> -->
+                <!-- <td>3.2.7</td> -->
+                <!-- <td>3.2.8</td> -->
+                <!-- <td>3.2.9</td> -->
+            </tr>
+
+            <!-- row_4 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- задаю высоту крайней левой ячейке, чтобы браузер имел ориентиры -->
+                <!-- 4.0.1 -->
+                <td rowspan="7" bgcolor="black" width="19" height="154"></td> <!-- delete 6 columns (5-10).0.1 on next rows_5-10 -->
+
+                <!-- 4.0.2 -->
+                <td colspan="3" rowspan="7" bgcolor="gainsboro" width="57" height="154"></td> <!-- delete next 2 columns ++++ columns "under" (5-10).0.(2-4) on next rows_5-10 -->
+                <!-- <td>4.0.3</td>
+                <td>4.0.4</td> -->
+
+                <!-- 4.0.5 -->
+                <td colspan="2" rowspan="12" bgcolor="black" width="38" height="264"></td> <!-- del next column ++++ columns "under" on next rows_5-15 -->
+                <!-- <td>4.0.6</td> -->
+
+                <!-- 4.0.7 -->
+                <td colspan="4" rowspan="5" bgcolor="gainsboro" width="76" height="110"></td> <!-- del next 3 columns ++++ columns "under" on next rows_5-8 -->
+                <!-- <td>4.0.8</td>
+                <td>4.0.9</td>
+                <td>4.1.0</td> -->
+
+                <!-- 4.1.1 -->
+                <td colspan="2" rowspan="5" bgcolor="gainsboro" width="38" height="110"></td> <!-- del next column ++++ columns "under" on next rows_5-8 -->
+                <!-- <td>4.1.2</td> -->
+
+                <!-- 4.1.3 -->
+                <td colspan="5" rowspan="5" bgcolor="#ffc61a" width="95" height="110"></td> <!-- del next 4 columns ++++ columns "under" on next rows_5-8 -->
+                <!-- <td>4.1.4</td>
+                <td>4.1.5</td>
+                <td>4.1.6</td>
+                <td>4.1.7</td> -->
+
+                <!-- 4.1.8 -->
+                <td colspan="6" rowspan="5" bgcolor="#cc0000" width="114" height="110"></td> <!-- del next 5 columns ++++ columns "under" on next rows_5-8 -->
+                <!-- <td>4.1.9</td>
+                <td>4.2.0</td>
+                <td>4.2.1</td>
+                <td>4.2.2</td>
+                <td>4.2.3</td> -->
+
+                <!-- 4.2.4 -->
+                <td colspan="2" rowspan="5" bgcolor="#cc0000" width="38" height="110"></td> <!-- del next column ++++ columns "under" on next rows_5-8 -->
+                <!-- <td>4.2.5</td> -->
+                <!-- <td>4.2.6</td>
+                <td>4.2.7</td> -->
+                <!-- <td>4.2.8</td>
+                <td>4.2.9</td> -->
+            </tr>
+
+            <!-- row_5 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>5.0.1</td> -->
+                <!-- <td>5.0.2</td>
+                <td>5.0.3</td>
+                <td>5.0.4</td> -->
+                <!-- <td>5.0.5</td>
+                <td>5.0.6</td> -->
+                <!-- <td>5.0.7</td>
+                <td>5.0.8</td>
+                <td>5.0.9</td>
+                <td>5.1.0</td> -->
+                <!-- <td>5.1.1</td>
+                <td>5.1.2</td> -->
+                <!-- <td>5.1.3</td>
+                <td>5.1.4</td>
+                <td>5.1.5</td>
+                <td>5.1.6</td>
+                <td>5.1.7</td> -->
+                <!-- <td>5.1.8</td>
+                <td>5.1.9</td>
+                <td>5.2.0</td>
+                <td>5.2.1</td>
+                <td>5.2.2</td>
+                <td>5.2.3</td> -->
+                <!-- <td>5.2.4</td>
+                <td>5.2.5</td> -->
+                <!-- <td>5.2.6</td>
+                <td>5.2.7</td> -->
+                <!-- <td>5.2.8</td>
+                <td>5.2.9</td> -->
+            </tr>
+
+            <!-- row_6 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>6.0.1</td> -->
+                <!-- <td>6.0.2</td>
+                <td>6.0.3</td>
+                <td>6.0.4</td> -->
+                <!-- <td>6.0.5</td>
+                <td>6.0.6</td> -->
+                <!-- <td>6.0.7</td>
+                <td>6.0.8</td>
+                <td>6.0.9</td>
+                <td>6.1.0</td> -->
+                <!-- <td>6.1.1</td>
+                <td>6.1.2</td> -->
+                <!-- <td>6.1.3</td>
+                <td>6.1.4</td>
+                <td>6.1.5</td>
+                <td>6.1.6</td>
+                <td>6.1.7</td> -->
+                <!-- <td>6.1.8</td>
+                <td>6.1.9</td>
+                <td>6.2.0</td>
+                <td>6.2.1</td>
+                <td>6.2.2</td>
+                <td>6.2.3</td> -->
+                <!-- <td>6.2.4</td>
+                <td>6.2.5</td> -->
+                <!-- <td>6.2.6</td>
+                <td>6.2.7</td> -->
+                <!-- <td>6.2.8</td>
+                <td>6.2.9</td> -->
+            </tr>
+
+            <!-- row_7 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>7.0.1</td> -->
+                <!-- <td>7.0.2</td>
+                <td>7.0.3</td>
+                <td>7.0.4</td> -->
+                <!-- <td>7.0.5</td>
+                <td>7.0.6</td> -->
+                <!-- <td>7.0.7</td>
+                <td>7.0.8</td>
+                <td>7.0.9</td>
+                <td>7.1.0</td> -->
+                <!-- <td>7.1.1</td>
+                <td>7.1.2</td> -->
+                <!-- <td>7.1.3</td>
+                <td>7.1.4</td>
+                <td>7.1.5</td>
+                <td>7.1.6</td>
+                <td>7.1.7</td> -->
+                <!-- <td>7.1.8</td>
+                <td>7.1.9</td>
+                <td>7.2.0</td>
+                <td>7.2.1</td>
+                <td>7.2.2</td>
+                <td>7.2.3</td> -->
+                <!-- <td>7.2.4</td>
+                <td>7.2.5</td> -->
+                <!-- <td>7.2.6</td>
+                <td>7.2.7</td> -->
+                <!-- <td>7.2.8</td>
+                <td>7.2.9</td> -->
+            </tr>
+
+            <!-- row_8 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>8.0.1</td> -->
+                <!-- <td>8.0.2</td>
+                <td>8.0.3</td>
+                <td>8.0.4</td> -->
+                <!-- <td>8.0.5</td>
+                <td>8.0.6</td> -->
+                <!-- <td>8.0.7</td>
+                <td>8.0.8</td>
+                <td>8.0.9</td>
+                <td>8.1.0</td> -->
+                <!-- <td>8.1.1</td>
+                <td>8.1.2</td> -->
+                <!-- <td>8.1.3</td>
+                <td>8.1.4</td>
+                <td>8.1.5</td>
+                <td>8.1.6</td>
+                <td>8.1.7</td> -->
+                <!-- <td>8.1.8</td>
+                <td>8.1.9</td>
+                <td>8.2.0</td>
+                <td>8.2.1</td>
+                <td>8.2.2</td>
+                <td>8.2.3</td> -->
+                <!-- <td>8.2.4</td>
+                <td>8.2.5</td> -->
+                <!-- <td>8.2.6</td>
+                <td>8.2.7</td> -->
+                <!-- <td>8.2.8</td>
+                <td>8.2.9</td> -->
+            </tr>
+
+            <!-- row_9 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>9.0.1</td> -->
+                <!-- <td>9.0.2</td>
+                <td>9.0.3</td>
+                <td>9.0.4</td> -->
+                <!-- <td>9.0.5</td>
+                <td>9.0.6</td> -->
+
+                <!-- 9.0.7 -->
+                <td colspan="2" rowspan="2" bgcolor="#ffc61a" width="38" height="44"></td> <!-- del next column ++++ columns "under" on next row_10-->
+                <!-- <td>9.0.8</td> -->
+
+                <!-- 9.0.9 -->
+                <td colspan="4" rowspan="2" bgcolor="#cc0000" width="76" height="44"></td> <!-- del next 3 columns ++++ columns "under" on next row_10-->
+                <!-- <td>9.1.0</td>
+                <td>9.1.1</td>
+                <td>9.1.2</td> -->
+
+                <!-- 9.1.3 -->
+                <td colspan="5" rowspan="2" bgcolor="midnightblue" width="95" height="44"></td> <!-- del next 4 columns ++++ columns "under" on next row_10-->
+                <!-- <td>9.1.4</td>
+                <td>9.1.5</td>
+                <td>9.1.6</td>
+                <td>9.1.7</td> -->
+
+                <!-- 9.1.8 -->
+                <td colspan="6" rowspan="2" bgcolor="gainsboro" width="114" height="44"></td> <!-- del next 5 columns ++++ columns "under" on next row_10-->
+                <!-- <td>9.1.9</td>
+                <td>9.2.0</td>
+                <td>9.2.1</td>
+                <td>9.2.2</td>
+                <td>9.2.3</td> -->
+
+                <!-- 9.2.4 -->
+                <td colspan="2" rowspan="2" bgcolor="gainsboro" width="38" height="44"></td> <!-- del next column ++++ columns "under" on next row_10-->
+                <!-- <td>9.2.5</td> -->
+
+                <!-- 9.2.6 -->
+                <td colspan="4" rowspan="2" bgcolor="black" width="76" height="44"></td> <!-- del next 3 columns ++++ columns "under" on next row_10-->
+                <!-- <td>9.2.7</td>
+                <td>9.2.8</td>
+                <td>9.2.9</td> -->
+            </tr>
+
+            <!-- row_10 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>10.0.1</td> -->
+                <!-- <td>10.0.2</td>
+                <td>10.0.3</td>
+                <td>10.0.4</td> -->
+                <!-- <td>10.0.5</td>
+                <td>10.0.6</td> -->
+                <!-- <td>10.0.7</td>
+                <td>10.0.8</td> -->
+                <!-- <td>10.0.9</td>
+                <td>10.1.0</td>
+                <td>10.1.1</td>
+                <td>10.1.2</td> -->
+                <!-- <td>10.1.3</td>
+                <td>10.1.4</td>
+                <td>10.1.5</td>
+                <td>10.1.6</td>
+                <td>10.1.7</td> -->
+                <!-- <td>10.1.8</td>
+                <td>10.1.9</td>
+                <td>10.2.0</td>
+                <td>10.2.1</td>
+                <td>10.2.2</td>
+                <td>10.2.3</td> -->
+                <!-- <td>10.2.4</td>
+                <td>10.2.5</td> -->
+                <!-- <td>10.2.6</td>
+                <td>10.2.7</td>
+                <td>10.2.8</td>
+                <td>10.2.9</td> -->
+            </tr>
+
+            <!-- row_11 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- задаю высоту крайней левой ячейке, чтобы браузер имел ориентиры -->
+                <!-- 11.0.1 -->
+                <td rowspan="5" bgcolor="gainsboro" width="19" height="110"></td> <!-- del columns "under" on next rows_12-15-->
+
+                <!-- 11.0.2 -->
+                <td colspan="3" rowspan="5" bgcolor="#cc0000" width="57" height="110"></td> <!-- del next 2 columns ++++ columns "under" on next rows_12-15 -->
+                <!-- <td>11.0.3</td>
+                <td>11.0.4</td> -->
+
+                <!-- 11.0.5 -->
+                <!-- <td colspan="2" rowspan="5" bgcolor="black" width="38" height="130"></td>  del next column ++++ columns "under" on next rows_12-15 -->
+                <!-- <td>11.0.5</td>
+                <td>11.0.6</td> -->
+
+                <!-- 11.0.7 -->
+                <td colspan="2" rowspan="7" bgcolor="#ffc61a" width="38" height="154"></td> <!-- del next column ++++ columns "under" on next rows_12-17 -->
+                <!-- <td>11.0.8</td> -->
+
+                <!-- 11.0.9 -->
+                <td colspan="7" rowspan="4" bgcolor="gainsboro" width="133" height="88"></td> <!-- del next 6 columns ++++ columns "under" on next rows_12-14 -->
+                <!-- <td>11.1.0</td>
+                <td>11.1.1</td>
+                <td>11.1.2</td>
+                <td>11.1.3</td>
+                <td>11.1.4</td>
+                <td>11.1.5</td> -->
+
+                <!-- 11.1.6 -->
+                <td colspan="5" rowspan="4" bgcolor="gainsboro" width="95" height="88"></td> <!-- del next 4 columns ++++ columns "under" on next rows_12-14 -->
+                <!-- <td>11.1.7</td>
+                <td>11.1.8</td>
+                <td>11.1.9</td>
+                <td>11.2.0</td> -->
+
+                <!-- 11.2.1 -->
+                <td colspan="3" rowspan="4" bgcolor="midnightblue" width="57" height="88"></td> <!-- del next 2 columns ++++ columns "under" on next rows_12-14 -->
+                <!-- <td>11.2.2</td>
+                <td>11.2.3</td> -->
+
+                <!-- 11.2.4 -->
+                <td colspan="2" rowspan="4" bgcolor="#ffc61a" width="38" height="88"></td> <!-- del next column ++++ columns "under" on next rows_12-14 -->
+                <!-- <td>11.2.5</td> -->
+
+                <!-- 11.2.6 -->
+                <td colspan="4" rowspan="4" bgcolor="gainsboro" width="76" height="88"></td> <!-- del next 3 columns ++++ columns "under" on next rows_12-14 -->
+                <!-- <td>11.2.7</td>
+                <td>11.2.8</td>
+                <td>11.2.9</td> -->
+            </tr>
+
+            <!-- row_12 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>12.0.1</td> -->
+                <!-- <td>12.0.2</td>
+                <td>12.0.3</td>
+                <td>12.0.4</td> -->
+                <!-- <td>12.0.5</td>
+                <td>12.0.6</td> -->
+                <!-- <td>12.0.7</td>
+                <td>12.0.8</td> -->
+                <!-- <td>12.0.9</td>
+                <td>12.1.0</td>
+                <td>12.1.1</td>
+                <td>12.1.2</td>
+                <td>12.1.3</td>
+                <td>12.1.4</td>
+                <td>12.1.5</td> -->
+                <!-- <td>12.1.6</td>
+                <td>12.1.7</td>
+                <td>12.1.8</td>
+                <td>12.1.9</td>
+                <td>12.2.0</td> -->
+                <!-- <td>12.2.1</td>
+                <td>12.2.2</td>
+                <td>12.2.3</td> -->
+                <!-- <td>12.2.4</td>
+                <td>12.2.5</td> -->
+                <!-- <td>12.2.6</td>
+                <td>12.2.7</td>
+                <td>12.2.8</td>
+                <td>12.2.9</td> -->
+            </tr>
+
+            <!-- row_13 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>13.0.1</td> -->
+                <!-- <td>13.0.2</td>
+                <td>13.0.3</td>
+                <td>13.0.4</td> -->
+                <!-- <td>13.0.5</td>
+                <td>13.0.6</td> -->
+                <!-- <td>13.0.7</td>
+                <td>13.0.8</td> -->
+                <!-- <td>13.0.9</td>
+                <td>13.1.0</td>
+                <td>13.1.1</td>
+                <td>13.1.2</td>
+                <td>13.1.3</td>
+                <td>13.1.4</td>
+                <td>13.1.5</td> -->
+                <!-- <td>13.1.6</td>
+                <td>13.1.7</td>
+                <td>13.1.8</td>
+                <td>13.1.9</td>
+                <td>13.2.0</td> -->
+                <!-- <td>13.2.1</td>
+                <td>13.2.2</td>
+                <td>13.2.3</td> -->
+                <!-- <td>13.2.4</td>
+                <td>13.2.5</td> -->
+                <!-- <td>13.2.6</td>
+                <td>13.2.7</td>
+                <td>13.2.8</td>
+                <td>13.2.9</td> -->
+            </tr>
+
+            <!-- row_14 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>14.0.1</td> -->
+                <!-- <td>14.0.2</td>
+                <td>14.0.3</td>
+                <td>14.0.4</td> -->
+                <!-- <td>14.0.5</td>
+                <td>14.0.6</td> -->
+                <!-- <td>14.0.7</td>
+                <td>14.0.8</td> -->
+                <!-- <td>14.0.9</td>
+                <td>14.1.0</td>
+                <td>14.1.1</td>
+                <td>14.1.2</td>
+                <td>14.1.3</td>
+                <td>14.1.4</td>
+                <td>14.1.5</td> -->
+                <!-- <td>14.1.6</td>
+                <td>14.1.7</td>
+                <td>14.1.8</td>
+                <td>14.1.9</td>
+                <td>14.2.0</td> -->
+                <!-- <td>14.2.1</td>
+                <td>14.2.2</td>
+                <td>14.2.3</td> -->
+                <!-- <td>14.2.4</td>
+                <td>14.2.5</td> -->
+                <!-- <td>14.2.6</td>
+                <td>14.2.7</td>
+                <td>14.2.8</td>
+                <td>14.2.9</td> -->
+            </tr>
+
+            <!-- row_15 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>15.0.1</td> -->
+                <!-- <td>15.0.2</td>
+                <td>15.0.3</td>
+                <td>15.0.4</td> -->
+                <!-- <td>15.0.5</td>
+                <td>15.0.6</td> -->
+                <!-- <td>15.0.7</td>
+                <td>15.0.8</td> -->
+
+                <!-- 15.0.9 -->
+                <td colspan="4" rowspan="3" bgcolor="#cc0000" width="76" height="66"></td> <!-- del next 3 columns ++++ columns "under" on next rows_16-17 -->
+                <!-- <td>15.1.0</td>
+                <td>15.1.1</td>
+                <td>15.1.2</td> -->
+
+                <!-- 15.1.3 -->
+                <td colspan="8" rowspan="3" bgcolor="black" width="152" height="66"></td> <!-- del next 7 columns ++++ columns "under" on next rows_16-17 -->
+                <!-- <td>15.1.4</td>
+                <td>15.1.5</td>
+                <td>15.1.6</td>
+                <td>15.1.7</td>
+                <td>15.1.8</td>
+                <td>15.1.9</td>
+                <td>15.2.0</td> -->
+
+                <!-- 15.2.1 -->
+                <td colspan="9" rowspan="3" bgcolor="gainsboro" width="171" height="66"></td> <!-- del next 8 columns ++++ columns "under" on next rows_16-17 -->
+                <!-- <td>15.2.2</td>
+                <td>15.2.3</td>
+                <td>15.2.4</td>
+                <td>15.2.5</td>
+                <td>15.2.6</td>
+                <td>15.2.7</td>
+                <td>15.2.8</td>
+                <td>15.2.9</td> -->
+            </tr>
+
+            <!-- row_16 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- задаю высоту крайней левой ячейке, чтобы браузер имел ориентиры -->
+                <!-- 16.0.1 -->
+                <td colspan="6" rowspan="2" bgcolor="gainsboro" width="114" height="44"></td> <!-- del next 5 columns ++++ columns "under" on next row_17 -->
+                <!-- <td>16.0.2</td>
+                <td>16.0.3</td>
+                <td>16.0.4</td>
+                <td>16.0.5</td>
+                <td>16.0.6</td> -->
+                <!-- <td>16.0.7</td>
+                <td>16.0.8</td> -->
+                <!-- <td>16.0.9</td>
+                <td>16.1.0</td>
+                <td>16.1.1</td>
+                <td>16.1.2</td> -->
+                <!-- <td>16.1.3</td>
+                <td>16.1.4</td>
+                <td>16.1.5</td>
+                <td>16.1.6</td>
+                <td>16.1.7</td>
+                <td>16.1.8</td>
+                <td>16.1.9</td>
+                <td>16.2.0</td> -->
+                <!-- <td>16.2.1</td>
+                <td>16.2.2</td>
+                <td>16.2.3</td>
+                <td>16.2.4</td>
+                <td>16.2.5</td>
+                <td>16.2.6</td>
+                <td>16.2.7</td>
+                <td>16.2.8</td>
+                <td>16.2.9</td> -->
+            </tr>
+
+            <!-- row_17 -->
+            <tr>
+                <!-- 29 columns -->
+                <!-- <td>17.0.1</td>
+                <td>17.0.2</td>
+                <td>17.0.3</td>
+                <td>17.0.4</td>
+                <td>17.0.5</td>
+                <td>17.0.6</td> -->
+                <!-- <td>17.0.7</td>
+                <td>17.0.8</td> -->
+                <!-- <td>17.0.9</td>
+                <td>17.1.0</td>
+                <td>17.1.1</td>
+                <td>17.1.2</td> -->
+                <!-- <td>17.1.3</td>
+                <td>17.1.4</td>
+                <td>17.1.5</td>
+                <td>17.1.6</td>
+                <td>17.1.7</td>
+                <td>17.1.8</td>
+                <td>17.1.9</td>
+                <td>17.2.0</td> -->
+                <!-- <td>17.2.1</td>
+                <td>17.2.2</td>
+                <td>17.2.3</td>
+                <td>17.2.4</td>
+                <td>17.2.5</td>
+                <td>17.2.6</td>
+                <td>17.2.7</td>
+                <td>17.2.8</td>
+                <td>17.2.9</td> -->
+            </tr>
         </table>
     </body>
 </html>
